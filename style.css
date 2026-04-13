@@ -1,0 +1,132 @@
+  * {
+      padding: 0px;
+      margin: 0px;
+      box-sizing: border-box;
+  }
+
+  html {
+      scroll-behavior: smooth;
+  }
+
+  body {
+      background-color: rgba(245, 235, 220, 1);
+      font-family: 'Playfair Display', serif;
+  }
+nav{
+   background-color: rgba(180, 150, 100, 1);  ;
+    font-size: 17px;
+    
+}
+.navbar-brand{
+    font-size: 25px;
+}
+.navbar-nav .nav-link{
+    position: relative;
+}
+.navbar-nav .nav-link::after{
+    content: ' ';
+    width: 0%;
+    height: 3px;
+    background-color: antiquewhite;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: all 0.5s .3s linear;
+}
+ .navbar-nav .nav-link:hover::after {
+    width: 90%;
+}
+/* /////////////////////////////  header */
+header{
+    background-image: url(./assts/img/Header1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    padding: 120px 0;
+}
+.btn{
+    transition: all 0.3s ease;
+}
+.bt1:hover{
+    background-color: #e0d5d5 !important ;
+    transform: translateY(-2px);
+} 
+.bt2:hover{
+    background-color: #d49400 !important;
+    transform: translateY(-2px);
+}
+/* //////////////////////////////////section */
+
+.card1 {
+    border: none;
+    transition: all 1s;
+}
+
+.card1:hover {
+    transform: translateY(-10px);
+}
+
+.circle {
+    width: 70px;
+    height: 70px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: #d49400 solid 7px;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    transition: all 1s;
+    margin-left: 70px;
+
+}
+
+.circle:hover {
+    background-color: #bd9329;
+
+    border: #a09c92 solid 10px;
+}
+
+.circle i {
+    font-size: 30px;
+}
+/* /////////////////////////////////section3 */
+
+
+.sale2{
+    background-color: rgb(127, 104, 70);
+   transition: all ease .4s .3s;
+}
+.sale2:hover{
+    transform: translateY(-5px);
+}
+/* /////////////////// */
+.swiper-slide img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+/* /////////////////////////////////////////////// */
+.break{
+    height: 100vh;
+}
+.break2{
+    
+    background-image: url(./assts/img/last.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 450px;
+   
+    object-fit: cover;
+    
+}
+
+/* //////////////////////////////////////// */
+
+footer{
+    height: 70px;
+
+}
